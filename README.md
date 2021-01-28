@@ -16,6 +16,8 @@ $ yarn
 $ yarn dev
 ```
 
+Create a `.env.local` file similar to [`.env.example`](https://github.com/cruzentwickler/williamcruz/blob/main/.env.example).
+
 ## Built Using
 
 - [Next.js](https://nextjs.org/)
