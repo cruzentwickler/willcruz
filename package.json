@@ -1,7 +1,17 @@
 {
-  "name": "willcruz",
-  "version": "0.1.0",
-  "private": true,
+  "name": "williamcruz.ch",
+  "description": "My personal website.",
+  "version": "0.0.0",
+  "author": {
+    "name": "William Cruz",
+    "email": "me@williamcruz.ch",
+    "url": "https://williamcruz.ch"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cruzentwickler/williamcruz.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
