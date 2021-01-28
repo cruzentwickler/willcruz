@@ -4,6 +4,9 @@ My portfolio has transformed over the years - from a Wrodpress theme, to an stat
 
 ## Overview
 
+- `pages/blog/*` - Static pre-rendered blog pages using [MDX](https://github.com/hashicorp/next-mdx-remote.git).
+- `pages/*` - All other static pages.
+
 ## Running Locally
 
 ```bash
