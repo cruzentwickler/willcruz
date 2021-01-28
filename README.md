@@ -8,7 +8,7 @@ My portfolio has transformed over the years - from a Wrodpress theme, to an stat
 
 ```bash
 $ git clone https://github.com/cruzentwickler/williamcruz.git
-$ cd willcruz
+$ cd williamcruz-main
 $ yarn
 $ yarn dev
 ```
