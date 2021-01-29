@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.2.3",
+    "gray-matter": "^4.0.2",
     "next": "10.0.5",
     "next-themes": "^0.0.10",
     "postcss": "^8.2.4",
@@ -31,5 +32,10 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "none"
+  },
+  "devDependencies": {
+    "globby": "^11.0.2",
+    "prettier": "^2.2.1",
+    "rss": "^1.2.2"
   }
 }
