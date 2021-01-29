@@ -1,4 +1,4 @@
-import Button from '@/components/Button';
+import ThemeChanger from '@/components/ThemeChanger';
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         dolores qui pariatur nemo, quam saepe quia in nam quibusdam consequuntur
         libero aliquid, officia mollitia ullam deleniti aut dolore sapiente!
       </p>
-      <Button>Weiter lesen</Button>
+      <ThemeChanger>Weiter lesen</ThemeChanger>
     </>
   );
 }
