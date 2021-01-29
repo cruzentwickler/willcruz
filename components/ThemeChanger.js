@@ -4,9 +4,14 @@ const ThemeChanger = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div>
+    <div className="text-black dark:text-white">
       The current theme is: {theme}
-      <button onClick={() => setTheme('light')}>Light Mode</button>
+      <button
+        onClick={() => setTheme('light')}
+        className="text-black dark:text-white"
+      >
+        Light Mode
+      </button>
       <button onClick={() => setTheme('dark')}>Dark Mode</button>
     </div>
   );
