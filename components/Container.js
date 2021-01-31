@@ -1,11 +1,9 @@
-import Header from '@/components/Navigation/Header';
-import SocialBar from '@/components/Navigation/SocialBar';
+import ToggleDarkMode from '@/components/ToggleDarkMode';
 
 const Container = ({ children }) => {
   return (
     <>
-      <Header />
-      <SocialBar />
+      <ToggleDarkMode />
       <main>{children}</main>
     </>
   );

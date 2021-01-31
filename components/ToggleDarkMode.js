@@ -9,7 +9,7 @@ const ToggleDarkMode = () => {
 
   return (
     <button
-      className="h-10 w-10"
+      className="h-10 w-10 fixed right-5 top-5"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       {mounted && (
