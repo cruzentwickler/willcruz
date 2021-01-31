@@ -1,20 +1,20 @@
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js'],
   darkMode: 'class',
+
   theme: {
     extend: {
-      typography: (theme) => ({
-        DEFAULT: {
-          color: theme('colors.gray.700')
-        },
-        dark: {
-          color: theme('colors.gray.300')
-        }
-      })
+      fontFamily: {
+        sans: ['Open Sans', ...fontFamily.sans]
+      }
     }
   },
+
   variants: {
-    typography: ['dark']
+    extend: {}
   },
+
   plugins: [require('@tailwindcss/typography')]
 };

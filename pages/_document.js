@@ -4,8 +4,23 @@ class MyDocument extends Document {
   render() {
     return (
       <Html lang="de">
-        <Head></Head>
-        <body className="bg-white dark:bg-black text-white dark:text-black">
+        <Head>
+          <link
+            rel="preload"
+            href="/fonts/open-sans-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/open-sans-bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+        </Head>
+        <body className="bg-white dark:bg-gray-800 text-black dark:text-white">
           <Main />
           <NextScript />
         </body>
