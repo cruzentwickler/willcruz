@@ -10,7 +10,7 @@ const Banner = () => {
         <h1 className="font-bold text-9xl  transform translate-x-1/2">
           {strOne} <br />
           {strTwo}
-          <span className="inline-block h-8 w-8 bg-pink-700 rounded-full ml-7" />
+          <span className="inline-block h-7 w-7 bg-pink-700 rounded-full ml-5" />
         </h1>
       </div>
     </div>
