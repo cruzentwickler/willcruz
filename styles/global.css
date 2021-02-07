@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+  src: url(/fonts/indie-flower-regular.woff2) format('woff2');
+}
+
+@font-face {
   font-family: 'Open Sans';
   font-style: bold;
   font-weight: 700;
@@ -16,4 +24,9 @@
   font-weight: 400;
   font-display: optional;
   src: url(/fonts/open-sans-regular.woff2) format('woff2');
+}
+
+html {
+  min-width: 360px;
+  scroll-behavior: smooth;
 }

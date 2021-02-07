@@ -1,10 +1,10 @@
-import ToggleDarkMode from '@/components/ToggleDarkMode';
+import Footer from './Footer';
 
 const Container = ({ children }) => {
   return (
     <>
-      <ToggleDarkMode />
       <main>{children}</main>
+      <Footer />
     </>
   );
 };

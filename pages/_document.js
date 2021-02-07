@@ -7,7 +7,7 @@ class MyDocument extends Document {
         <Head>
           <link
             rel="preload"
-            href="/fonts/open-sans-regular.woff2"
+            href="/fonts/indie-flower-regular.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
@@ -15,6 +15,13 @@ class MyDocument extends Document {
           <link
             rel="preload"
             href="/fonts/open-sans-bold.woff2"
+            as="font"
+            type="font/woff2"
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preload"
+            href="/fonts/open-sans-regular.woff2"
             as="font"
             type="font/woff2"
             crossOrigin="anonymous"
