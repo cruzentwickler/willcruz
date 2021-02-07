@@ -46,10 +46,10 @@ const Projects = () => {
                 <figcaption className="grid justify-items-end justify-end text-gray-500 mt-1">
                   <h5 className="font-bold">{item.title}</h5>
                   <span className="mb-3 font-handwriting text-lg">
-                    Web, Mobile, Tablet
+                    {'Web, Mobile, Tablet'}
                   </span>
                   <Link href={item.url}>
-                    <a className="font-handwriting relative text-xl hover:bg-red-500 text-white transition px-2">
+                    <a className="font-handwriting relative text-xl hover:bg-red-500 dark:text-white text-black transition px-2">
                       {'Live Project'}
                       <span className="absolute left-0 bottom-0 h-0.5 w-full bg-red-500 " />
                     </a>
@@ -69,7 +69,7 @@ const Projects = () => {
                 </p>
                 <Link href={item.url}>
                   <a className="font-handwriting relative text-xl hover:bg-red-500 transition px-2">
-                    {'Witer lesen'}
+                    {'Weiter lesen'}
                     <span className="absolute left-0 bottom-0 h-0.5 w-full bg-red-500 " />
                   </a>
                 </Link>
