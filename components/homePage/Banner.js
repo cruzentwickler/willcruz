@@ -26,7 +26,7 @@ const Banner = () => {
   return (
     <section className="h-screen w-screen overflow-hidden">
       <motion.div
-        className="h-full w-1/2 bg-brand-500 flex justify-end items-center"
+        className="h-full w-1/2 border flex justify-end items-center"
         initial="hidden"
         animate="visible"
         variants={variantOne}
@@ -37,7 +37,7 @@ const Banner = () => {
         >
           {'He'} <br />
           {'llo'}
-          <motion.span className="text-brand-500" variants={variantTwo}>
+          <motion.span className="" variants={variantTwo}>
             .
           </motion.span>
         </motion.h1>

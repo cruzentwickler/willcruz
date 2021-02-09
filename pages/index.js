@@ -8,7 +8,8 @@ export default function Home() {
   return (
     <Container>
       <Banner />
-      {/* <About />
+      <About />
+      {/* 
       <Projects />
       <TimeLine /> */}
     </Container>

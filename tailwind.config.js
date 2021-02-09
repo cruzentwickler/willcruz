@@ -5,11 +5,6 @@ module.exports = {
   darkMode: 'class',
 
   theme: {
-    colors: {
-      brand: {
-        500: '#EF4444'
-      }
-    },
     extend: {
       fontFamily: {
         sans: ['Open Sans', ...fontFamily.sans],

@@ -1,5 +1,6 @@
 import Link from 'next/link';
-
+import Title from '@/components/Title';
+import Services from '@/components/homePage/About/Services';
 const About = () => {
   const data = [
     {
@@ -92,29 +93,17 @@ const About = () => {
     }
   ];
 
-  const string = 'Digital';
-  const strHalf = Math.round(string.length / 2) - 1;
-  const strOne = string.slice(0, strHalf);
-  const strTwo = string.slice(strHalf);
-
-  const title = (
-    <>
-      <span className="block">{strOne}</span>
-      <span className="block">{strTwo}.</span>
-    </>
-  );
-
   return (
-    <section className="min-h-screen grid md:grid-cols-2">
-      <div className="py-20">
-        <div className="max-w-xs mx-auto">
-          <h2 className="text-8xl font-bold text-pink-600 mb-24">{title}</h2>
-          <p className="text-4xl font-bold mb-12">
+    <section className="grid min-h-screen md:grid-cols-2 ">
+      <div className="content-center grid justify-center p-8">
+        <div className="border md:max-w-xs grid gap-8 p-4">
+          <Title title="Digital" />
+          <p className="text-4xl font-bold max-w-xs">
             An <span className="font-handwriting">overview</span> of your
             digital strategy
-            <span className="text-pink-600">.</span>
+            <span className="">.</span>
           </p>
-          <p className="text-lg max-w-sm mb-12">
+          <p className="text-lg">
             A key component of your transformation, your digital strategy
             requires special attention. We provide you with the support you need
             all during your project. Through regular workshops, brainstormings
@@ -123,35 +112,12 @@ const About = () => {
           </p>
 
           <Link href="/">
-            <a className="text-2xl relative hover:bg-red-500 transition font-handwriting px-1">
-              Weiter lesen
-              <span className="absolute left-0 bottom-0 h-0.5 w-full bg-red-500 " />
-            </a>
+            <a className="font-handwriting text-2xl">Weiter lesen</a>
           </Link>
         </div>
       </div>
-
-      <div className="flex items-end justify-end">
-        <div className="bg-gray-700 grid grid-cols-2 p-14  gap-12">
-          {data.map((item) => (
-            <div key={item.id}>
-              <h3 className="text-lg text-white font-bold mb-3 ">
-                {item.title}
-              </h3>
-              <ul>
-                {item.description.map((item) => (
-                  <li key={item.name} className="text-gray-300 ">
-                    <Link href={item.url}>
-                      <a className="hover:bg-red-500 transition px-1">
-                        {item.name}
-                      </a>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
+      <div className="content-end grid">
+        <Services data={data} />
       </div>
     </section>
   );
