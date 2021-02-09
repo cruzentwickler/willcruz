@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Title from '@/components/Title';
+import { motion } from 'framer-motion';
 
 const Content = () => {
   const data = {
@@ -11,15 +12,25 @@ const Content = () => {
   };
   const { title, subTitle, content, url } = data;
 
+  const variantOne = {
+    hiden: {},
+    visible: {}
+  };
+
   return (
-    <div className="border lg:max-w-xs grid gap-8 p-4">
+    <motion.div
+      className="border lg:max-w-xs grid gap-8 p-4"
+      variants={variantOne}
+      initial="hidden"
+      animate="visible"
+    >
       <Title title={title} />
       <p className="text-4xl font-bold max-w-xs">{subTitle}</p>
       <p className="text-lg max-w-lg">{content}</p>
       <Link href={url}>
         <a className="font-handwriting text-2xl">Weiter lesen</a>
       </Link>
-    </div>
+    </motion.div>
   );
 };
 

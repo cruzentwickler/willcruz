@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const Services = () => {
   const data = [
@@ -93,8 +94,18 @@ const Services = () => {
     }
   ];
 
+  const variantOne = {
+    hiden: {},
+    visible: {}
+  };
+
   return (
-    <div className="border grid sm:grid-cols-2">
+    <motion.div
+      className="border grid sm:grid-cols-2"
+      variants={variantOne}
+      initial="hidden"
+      animate="visible"
+    >
       {data.map((item) => (
         <ul key={item.id} className="p-4 text-lg">
           <h3 className="font-bold mb-1">{item.title}</h3>
@@ -107,7 +118,7 @@ const Services = () => {
           ))}
         </ul>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
