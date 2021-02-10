@@ -6,7 +6,7 @@ const Title = ({ title }) => {
   const strTwo = string.slice(Math.round(string.length / 2) - 1);
 
   return (
-    <h2 className="font-bold text-8xl text-pink-600">
+    <h2>
       {strOne} <br />
       {strTwo}.
     </h2>
