@@ -19,7 +19,7 @@ const Projects = () => {
       {data.map((item) => {
         return (
           <section key={item.id} className="grid min-h-screen lg:grid-cols-2">
-            <div className="">
+            <div>
               <div className="sm:max-w-sm mx-10 sm:mx-auto my-20">
                 <Title title="Projects" />
               </div>

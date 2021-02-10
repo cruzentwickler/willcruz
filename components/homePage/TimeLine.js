@@ -3,8 +3,8 @@ import Title from '@/components/Title';
 
 const TimeLine = () => {
   return (
-    <section className="py-40">
-      <div className="sm:max-w-sm lg:max-w-4xl mx-auto -mb-10 relative z-10">
+    <section className="pt-32">
+      <div className="sm:max-w-sm lg:max-w-5xl mx-auto -mb-10 relative z-10 px-10">
         <Title title="Time Line" />
       </div>
       <div className="w-full h-80 relative">
