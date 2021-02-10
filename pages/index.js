@@ -7,7 +7,10 @@ import TimeLine from '@/components/homePage/TimeLine';
 export default function Home() {
   return (
     <Container>
+      <Banner />
       <About />
+      <Projects />
+      <TimeLine />
     </Container>
   );
 }

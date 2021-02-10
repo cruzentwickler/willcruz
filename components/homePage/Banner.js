@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Title from '../Title';
 
 const Banner = () => {
   const variantOne = {
@@ -26,7 +27,7 @@ const Banner = () => {
   return (
     <section className="h-screen w-screen overflow-hidden">
       <motion.div
-        className="h-full w-1/2 border flex justify-end items-center"
+        className="bg-gray-900 h-full w-1/2 flex justify-end items-center"
         initial="hidden"
         animate="visible"
         variants={variantOne}
@@ -35,11 +36,7 @@ const Banner = () => {
           className="font-bold text-9xl transform translate-x-1/2 "
           variants={variantTwo}
         >
-          {'He'} <br />
-          {'llo'}
-          <motion.span className="" variants={variantTwo}>
-            .
-          </motion.span>
+          <Title title="Hello" />
         </motion.h1>
       </motion.div>
     </section>
